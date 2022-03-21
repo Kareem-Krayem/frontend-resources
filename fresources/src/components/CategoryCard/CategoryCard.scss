@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Archive';
+  src: url('../../assets/fonts/Archive/Commercial/OTF/Archive-Regular.otf');
+  src: url('../../assets/fonts/Archive/Commercial/TTF/Archive-Regular.ttf');
+}
+
+.categoryCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  width: 20rem;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  box-shadow: 0 5px 15px -5px #00000070;
+  transition: 0.4s;
+
+  &:hover {
+    box-shadow: 0 5px 15px -5px #000000e8;
+    transform: scale(1.1);
+  }
+
+  &__icon {
+    font-size: 4em;
+    margin-bottom: 0.5rem;
+    transition: 0.5s;
+  }
+
+  &__title {
+    font-family: 'Archive', sans-serif;
+    font-size: 2em;
+  }
+}
