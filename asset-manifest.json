@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/frontend-resources/static/css/main.80c7b4b5.chunk.css",
+    "main.js": "/frontend-resources/static/js/main.76bddcdc.chunk.js",
+    "main.js.map": "/frontend-resources/static/js/main.76bddcdc.chunk.js.map",
+    "runtime-main.js": "/frontend-resources/static/js/runtime-main.a09a3a67.js",
+    "runtime-main.js.map": "/frontend-resources/static/js/runtime-main.a09a3a67.js.map",
+    "static/js/2.25bb3d3a.chunk.js": "/frontend-resources/static/js/2.25bb3d3a.chunk.js",
+    "static/js/2.25bb3d3a.chunk.js.map": "/frontend-resources/static/js/2.25bb3d3a.chunk.js.map",
+    "index.html": "/frontend-resources/index.html",
+    "static/css/main.80c7b4b5.chunk.css.map": "/frontend-resources/static/css/main.80c7b4b5.chunk.css.map",
+    "static/js/2.25bb3d3a.chunk.js.LICENSE.txt": "/frontend-resources/static/js/2.25bb3d3a.chunk.js.LICENSE.txt",
+    "static/media/CategoryCard.scss": "/frontend-resources/static/media/Archive-Regular.8d6270d6.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a09a3a67.js",
+    "static/js/2.25bb3d3a.chunk.js",
+    "static/css/main.80c7b4b5.chunk.css",
+    "static/js/main.76bddcdc.chunk.js"
+  ]
+}
