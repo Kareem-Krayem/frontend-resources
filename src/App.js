@@ -8,24 +8,28 @@ import HomePage from './Pages/HomePage';
 import LinksPage from './Pages/LinksPage';
 
 function App() {
-  const [category, setCategory] = useState('Frontend Resources');
+  const [categoryTitle, setCategoryTitle] = useState('Frontend Resources');
   const [categoryId, setCategoryId] = useState('');
 
   const getCat = (id, cat) => {
     setCategoryId(id);
-    setCategory(cat);
+    setCategoryTitle(cat);
+  };
+
+  const reset = () => {
+    setCategoryTitle('Frontend Resources');
   };
 
   return (
     <Router>
       <div className='App'>
-        <MainHeader title={category} author='Done by Karim Krayem' />
+        <MainHeader title={categoryTitle} author='Done by Karim Krayem' />
         <Switch>
-          <Route path={`/${category}`}>
-            <LinksPage catId={categoryId} catTitle={category} />
+          <Route path={`/${categoryTitle}`}>
+            <LinksPage catId={categoryId} catTitle={categoryTitle} />
           </Route>
-          <Route path='/'>
-            <HomePage getCat={getCat} />
+          <Route path='/' onClick={reset}>
+            <HomePage getCat={getCat} reset={reset} />
           </Route>
         </Switch>
         <Footer />

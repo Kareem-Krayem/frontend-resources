@@ -5,31 +5,22 @@ import './CategoryList.scss';
 import CategoryCard from '../components/CategoryCard/CategoryCard';
 import { Link } from 'react-router-dom';
 
+import { categories } from '../assets/Data/Data';
+
 function HomePage(props) {
-  const [categories, setCategory] = useState([]);
+  const [category, setCategory] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:8080/categories', {
-      mode: 'cors',
-      method: 'GET',
-      headers: {
-        'Content-type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        Accept: '*/*',
-      },
-    })
-      .then((results) => results.json())
-      .then((category) => {
-        setCategory(category);
-        setIsLoading(false);
-      });
-  }, [categories]);
+    setCategory(categories);
+    setIsLoading(false);
+    props.reset();
+  }, [category]);
 
   if (isLoading) {
     return (
       <p style={{ fontSize: '3em', textAlign: 'center' }} className='gradient'>
-        loading...
+        Loading...
       </p>
     );
   }
@@ -39,10 +30,10 @@ function HomePage(props) {
         return (
           <Link
             to={Category.title}
-            key={Category._id}
-            onClick={() => props.getCat(Category._id, Category.title)}
+            key={Category.id}
+            onClick={() => props.getCat(Category.id, Category.title)}
           >
-            <CategoryCard key={Category._id}>
+            <CategoryCard key={Category.id}>
               <i
                 className={`uil uil-${Category.icon} categoryCard__icon gradient`}
               ></i>
