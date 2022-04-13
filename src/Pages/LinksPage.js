@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 
 function LinksPage({ catId, catTitle }) {
   const [isLoading, setIsLoading] = useState(true);
-  const title = catTitle;
 
   useEffect(() => {
     setIsLoading(false);
@@ -29,7 +28,7 @@ function LinksPage({ catId, catTitle }) {
       </Link>
       <div className='categoryList' id='categorySection'>
         {data.map((obj) => {
-          if (obj.cat === title) {
+          if (obj.cat === catTitle) {
             return (
               <a href={obj.link} key={catId}>
                 <CategoryCard
