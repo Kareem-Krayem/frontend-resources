@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react/cjs/react.development';
+import React, { useEffect, useState } from 'react';
 import CategoryCard from '../components/CategoryCard/CategoryCard';
+import { Link } from 'react-router-dom';
 
 import { data } from '../assets/Data/Data';
-import { Link } from 'react-router-dom';
 
 function LinksPage({ catId, catTitle }) {
   const [isLoading, setIsLoading] = useState(true);
