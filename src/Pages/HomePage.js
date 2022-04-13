@@ -29,7 +29,7 @@ function HomePage(props) {
       {category.map((Category) => {
         return (
           <Link
-            to={Category.title}
+            to={`/${Category.title}`}
             key={Category.id}
             onClick={() => props.getCat(Category.id, Category.title)}
           >
