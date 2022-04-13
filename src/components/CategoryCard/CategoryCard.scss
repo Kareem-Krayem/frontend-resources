@@ -18,6 +18,19 @@
   box-shadow: 0 5px 15px -5px #00000070;
   transition: 0.4s;
 
+  @media screen and (max-width: 700px) {
+    width: 18rem;
+  }
+  @media screen and (max-width: 470px) {
+    width: 16rem;
+  }
+  @media screen and (max-width: 370px) {
+    width: 15rem;
+  }
+  @media screen and (max-width: 250px) {
+    width: 14rem;
+  }
+
   &:hover {
     box-shadow: 0 5px 15px -5px #000000e8;
     transform: scale(1.1);

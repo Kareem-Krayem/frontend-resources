@@ -18,12 +18,27 @@
     align-items: center;
     flex-wrap: wrap;
     color: #fff;
+    z-index: 1000;
 
     & > li {
       font-size: 2.5rem;
       padding: 2rem;
       transition: 0.5s;
       color: #fff;
+      z-index: 1000;
+
+      @media screen and (max-width: 700px) {
+        font-size: 2.3rem;
+      }
+      @media screen and (max-width: 470px) {
+        font-size: 2.1rem;
+      }
+      @media screen and (max-width: 370px) {
+        font-size: 1.9rem;
+      }
+      @media screen and (max-width: 250px) {
+        font-size: 1.5rem;
+      }
 
       &:hover {
         transform: scale(1.5);
@@ -38,6 +53,19 @@
   &__rights {
     font-size: 1.2em;
     color: #fff;
+
+    @media screen and (max-width: 700px) {
+      font-size: 1.1em;
+    }
+    @media screen and (max-width: 470px) {
+      font-size: 1em;
+    }
+    @media screen and (max-width: 370px) {
+      font-size: 0.9em;
+    }
+    @media screen and (max-width: 250px) {
+      font-size: .8em;
+    }
   }
 }
 
