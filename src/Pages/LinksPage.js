@@ -7,13 +7,11 @@ import { Link } from 'react-router-dom';
 
 function LinksPage({ catId, catTitle }) {
   const [isLoading, setIsLoading] = useState(true);
-  const [title, setTitle] = useState('');
+  const title = catTitle;
 
   useEffect(() => {
-    setTitle(catTitle);
     setIsLoading(false);
   }, []);
-
 
   if (isLoading) {
     return (
@@ -24,7 +22,7 @@ function LinksPage({ catId, catTitle }) {
   }
   return (
     <>
-      <Link to='/' label="test">
+      <Link to='/'>
         <i className='uil uil-angle-left-b gradient back'>
           <span className='back--text'>back</span>
         </i>
@@ -45,7 +43,7 @@ function LinksPage({ catId, catTitle }) {
                 </CategoryCard>
               </a>
             );
-          }
+          } else return '';
         })}
       </div>
     </>

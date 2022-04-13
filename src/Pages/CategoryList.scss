@@ -9,6 +9,12 @@
 .back{
   font-size: 2rem;
   display: flex;
+  transition: 0.4s;
+
+  &:hover{
+    transform: scaleY(1.1);
+    transform: scaleX(1.01);
+  }
 
   &--text{
     font-size: 1rem;

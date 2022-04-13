@@ -5,7 +5,7 @@ const ArrowButton = ({ toId, toRef, duration, children }) => {
   const handleClick = () => scrollTo({ id: toId, ref: toRef, duration });
 
   return (
-    <a href='#' onClick={handleClick}>
+    <a href='#categorySection' onClick={handleClick}>
       {children}
     </a>
   );

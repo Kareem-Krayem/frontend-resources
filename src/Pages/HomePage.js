@@ -15,7 +15,7 @@ function HomePage(props) {
     setCategory(categories);
     setIsLoading(false);
     props.reset();
-  }, [category]);
+  }, [props]);
 
   if (isLoading) {
     return (
@@ -26,7 +26,7 @@ function HomePage(props) {
   }
   return (
     <div className='categoryList' id='categorySection'>
-      {categories.map((Category) => {
+      {category.map((Category) => {
         return (
           <Link
             to={Category.title}

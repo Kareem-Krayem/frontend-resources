@@ -11,7 +11,6 @@ export const categories = [
     title: 'fonts',
     icon: 'font',
   },
-  ,
   {
     id: '2',
     title: 'icons',
