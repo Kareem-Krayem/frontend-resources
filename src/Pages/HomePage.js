@@ -12,6 +12,7 @@ function HomePage(props) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    props.reset();
     setCategory(categories);
     setIsLoading(false);
   }, [props]);

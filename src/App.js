@@ -28,8 +28,8 @@ function App() {
           <Route path={`/${categoryTitle}`}>
             <LinksPage catId={categoryId} catTitle={categoryTitle} />
           </Route>
-          <Route path='/' onClick={reset}>
-            <HomePage getCat={getCat} />
+          <Route path='/'>
+            <HomePage getCat={getCat} reset={reset} />
           </Route>
         </Switch>
         <Footer />
