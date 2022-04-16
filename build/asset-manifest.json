@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/frontend-resources/static/css/main.0d721fc6.chunk.css",
-    "main.js": "/frontend-resources/static/js/main.6a3f385b.chunk.js",
-    "main.js.map": "/frontend-resources/static/js/main.6a3f385b.chunk.js.map",
+    "main.css": "/frontend-resources/static/css/main.41c91510.chunk.css",
+    "main.js": "/frontend-resources/static/js/main.bebfb305.chunk.js",
+    "main.js.map": "/frontend-resources/static/js/main.bebfb305.chunk.js.map",
     "runtime-main.js": "/frontend-resources/static/js/runtime-main.a09a3a67.js",
     "runtime-main.js.map": "/frontend-resources/static/js/runtime-main.a09a3a67.js.map",
     "static/js/2.e61e4221.chunk.js": "/frontend-resources/static/js/2.e61e4221.chunk.js",
     "static/js/2.e61e4221.chunk.js.map": "/frontend-resources/static/js/2.e61e4221.chunk.js.map",
     "index.html": "/frontend-resources/index.html",
-    "static/css/main.0d721fc6.chunk.css.map": "/frontend-resources/static/css/main.0d721fc6.chunk.css.map",
+    "static/css/main.41c91510.chunk.css.map": "/frontend-resources/static/css/main.41c91510.chunk.css.map",
     "static/js/2.e61e4221.chunk.js.LICENSE.txt": "/frontend-resources/static/js/2.e61e4221.chunk.js.LICENSE.txt",
     "static/media/CategoryCard.scss": "/frontend-resources/static/media/Archive-Regular.8d6270d6.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.a09a3a67.js",
     "static/js/2.e61e4221.chunk.js",
-    "static/css/main.0d721fc6.chunk.css",
-    "static/js/main.6a3f385b.chunk.js"
+    "static/css/main.41c91510.chunk.css",
+    "static/js/main.bebfb305.chunk.js"
   ]
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import CategoryCard from '../components/CategoryCard/CategoryCard';
+
 import { Link } from 'react-router-dom';
 
 import { data } from '../assets/Data/Data';
@@ -30,15 +30,12 @@ function LinksPage({ catId, catTitle }) {
           if (obj.cat === catTitle) {
             return (
               <a href={obj.link} key={catId}>
-                <CategoryCard
-                  key={catId}
-                  style={{ height: '15rem', width: '30rem' }}
-                >
+                <div className='categoryCard' key={catId} id='linkCards'>
                   <h1 className='categoryCard__title gradient'>{obj.title}</h1>
                   <p className='gradient title__description'>
                     {obj.description}
                   </p>
-                </CategoryCard>
+                </div>
               </a>
             );
           } else return '';

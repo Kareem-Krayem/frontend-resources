@@ -3,7 +3,7 @@ import './CategoryCard.scss';
 
 function CategoryCard(props) {
   return (
-    <div className='categoryCard' style={props.style}>
+    <div className='categoryCard' style={props.style} id={props.id}>
       {props.children}
     </div>
   );
