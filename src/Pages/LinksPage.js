@@ -35,7 +35,7 @@ function LinksPage({ catId, catTitle }) {
                   style={{ height: '15rem', width: '30rem' }}
                 >
                   <h1 className='categoryCard__title gradient'>{obj.title}</h1>
-                  <p className='gradient' style={{ marginTop: '1em' }}>
+                  <p className='gradient title__description'>
                     {obj.description}
                   </p>
                 </CategoryCard>

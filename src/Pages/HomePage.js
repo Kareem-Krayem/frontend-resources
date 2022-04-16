@@ -14,7 +14,6 @@ function HomePage(props) {
   useEffect(() => {
     setCategory(categories);
     setIsLoading(false);
-    props.reset();
   }, [props]);
 
   if (isLoading) {

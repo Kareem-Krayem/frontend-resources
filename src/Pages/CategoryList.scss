@@ -22,3 +22,23 @@
     align-items: center;
   }
 }
+
+.title__description{
+  margin-top: 1rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  font-size: 1rem;
+  
+  @media screen and (max-width: 700px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 470px) {
+    font-size: .8rem;
+  }
+  @media screen and (max-width: 370px) {
+    font-size: .5rem;
+  }
+  @media screen and (max-width: 250px) {
+    font-size: .4rem;
+  }
+  }
